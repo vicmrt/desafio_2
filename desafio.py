@@ -32,7 +32,7 @@ while True:
                 break
 
     elif opcao == 's':
-        if numero_saques < 3:
+        if numero_saques < LIMITE_SAQUES:
             while True:
                 valor = float(input("Digite um valor a ser sacado: "))
                 if valor < 0:
