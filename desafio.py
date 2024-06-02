@@ -105,6 +105,13 @@ def adicionar_conta(contas, usuarios):
         contas.append(conta)
 
 def menu_inicio():
+    saldo = 0
+    limite = 500
+    extrato = ""
+    numero_saques = 0
+    LIMITE_SAQUES = 3
+    usuarios = []
+    contas = []
     menu = """
     [d] Depositar
     [s] Sacar
@@ -127,18 +134,9 @@ def menu_inicio():
         elif opcao == 'c':
             adicionar_conta(contas, usuarios)
         elif opcao == 'q':
-            print(contas)
-            print(usuarios)
             break
         else:
             print("Opção inválida. Por favor, selecione novamente")
 
-saldo = 0
-limite = 500
-extrato = ""
-numero_saques = 0
-LIMITE_SAQUES = 3
-usuarios = []
-contas = []
 
 menu_inicio()
